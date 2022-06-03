@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+:root,
+:root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+}
+
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #45ADFE;
+}
+
+header {
+  position: relative;
+}
+
+body {
+  max-width: 1280px;
+  min-width: 600px;
+  width: 95%;
+  margin: auto;
+}
+h1, h2 {
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  padding: 1em;
+  border: 1px solid var(--text-color);
+  margin-bottom: 1em;
+}
+
+footer {
+  padding: 1em;
+  border: 1px solid var(--text-color);
+}
+
+footer p {
+  margin-left: 10%;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  width: 90%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+article {
+  position: relative;
+  flex: auto;
+}
+
+.entreprise {
+  position: absolute;
+  right: 10%;
+}
+
+.slides-container {
+  position: relative;
+}
+
+.slides {
+  display: none;
+  position: relative;
+  /*min-height: 500px;*/
+}
+
+.slides p, .slides ul{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#formation p, #formation ul{
+  margin-left: 25%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+  padding: 16px;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.theme-btn {
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+}
+
+.theme-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.theme-btn.light {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: inline;
+}
+
+.dark .theme-btn.dark {
+  display: none;
+}
+
+/* Fading animation */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+#stats-container {
+  background-color: #2782c8;
+  width: 85%;
+  max-width: 1024px;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  color: #fff;
+}
+
+#stats-container h2 {
+  margin: 0 -10px 5px -10px;
+  background-color: #0d436d;
+}
+
+#stats-container p {
+  margin: 0;
+}
+
+.stat-bar {
+  margin-bottom: 10px;
+  background-color: #bbb;
+  width: 100%;
+  overflow: hidden;
+}
+
+.stat-value {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #0d436d;
+}
+
+.half { 
+  width: 50%;
+  animation: slideIn-half 1s ease-out;
+}
+
+.quarter {
+   width: 25%;
+   animation: slideIn-quarter 1s ease-out;
+}
+
+.full {
+  width: 100%;
+  animation: slideIn-full 1s ease-out;
+}
+
+.three-qurt {
+  width: 75%;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes slideIn-half {
+   from {left: -50%;}
+   to {left: 0;}
+ }
+
+@keyframes slideIn-quarter {
+  from {left: -25%;}
+  to {left: 0;}
+}
+
+@keyframes slideIn-full {
+  from {left: -100%;}
+  to {left: 0;}
+}
+
+@keyframes slideIn {
+  from {left: -75%;}
+  to {left: 0;}
+}

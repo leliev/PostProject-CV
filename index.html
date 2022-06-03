@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./ressources/style/index.css">
+  <link rel="icon" type="image/x-icon" href="./ressources/images/favicon.ico">
+  <title>Web CV</title>
+</head>
+<body>
+  <header>
+    <h1>Développeur Full Stack</h1>
+    <button class="theme-btn light" onclick="setTheme('light')" title="thème clair">
+      <img src="./ressources/images/sun-icon-8582.png" alt="thème clair">
+    </button>
+    <button class="theme-btn dark" onclick="setTheme('dark')" title="thème sombre">
+      <img src="./ressources/images/nature-icon-37198.png" alt="thème sombre">
+    </button>
+  </header>
+  
+  <main>
+    <div class="slides-container">
+      <article class="slides fadeIn">
+        <hr>
+        <h2>Expériences Professionnelles</h2>
+        <hr>
+        <p>
+          <b>07/2021-03/2022 Formation Développeur Full Stack</b><br>
+          <ul>
+            <li>*Obtention du diplôme après réalisation de 7 projets et étude
+              du dossier par un jury.</li>
+          </ul>
+        </p>
+        <p>
+          <b>01/2020-09/2020 Technicien informatique</b>
+          <b class="entreprise">PC-Pack</b><br>
+          <ul>
+            <li>*Préparation des commandes (Hardware/Software)</li>
+            <li>*Prise en charge SAV</li>
+          </ul>
+        </p>
+        <p>
+          <b>2018-2019 Reconversion professionnelle</b><br>
+          <ul>
+            <li>*Initiation à la méthode AGILE</li>
+            <li>*Initiation au développement Web</li>
+          </ul>
+        </p>
+        <p>
+          <b>2017-2018 Boulanger</b>
+          <b class="entreprise">La Galerie des Pains</b><br>
+          <ul>
+            <li>*Responsable de la production, des commandes et de la formation du personnel</li>
+            <li>*Mise en place de l'organisation du travail</li>
+            <li>*Ajout de 2 produits saisonniers à la vente</li>
+          </ul>
+        </p>
+        <p>
+          <b>2016-2017 Ouvrier polyvalent</b>
+          <b class="entreprise">Burger King</b><br>
+          <ul>
+            <li>*Responsable de cuisine, application des règles d'hygiène, gestion des effectifs du shift</li>
+          </ul>
+        </p>
+      </article>
+
+      <article id="formation" class="slides fadeIn">
+        <hr>
+        <h2>Formation</h2>
+        <hr>
+        <p>
+          <b>07/2021-03/2022 Formation développeur Web FullStack</b><br>
+          <ul>
+            <li>*Formation OpenClassrooms - Diplôme Obtenu</li>
+          </ul>
+        </p>
+        <p>
+          <b>2019 Initiation à la méthode AGILE</b><br>
+          <ul>
+            <li>*Formation DSI Société Générale</li>
+          </ul>
+        </p>
+        <p>
+          <b>2008-2009 CAP Boulangerie</b><br>
+          <ul>
+            <li>*Alternance INBP/Boulanger de Monge</li>
+          </ul>
+        </p>
+        <p>
+          <b>2003-2006 DEUG LLCE Japonais</b><br>
+          <ul>
+            <li>*Université Paris VII</li>
+          </ul>
+        </p>
+      </article>
+
+      <article class="slides fadeIn">
+        <!--Container for stat-bar created by createStats()-->
+        <div id="stats-container"></div>
+      </article>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)" title="précédent">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" title="suivant">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)" title="Expériences Professionnelles"></span>
+      <span class="dot" onclick="currentSlide(2)" title="Formation"></span>
+      <span class="dot" onclick="currentSlide(3)" title="Stats"></span>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <h2>Contact and more</h2>
+    <hr>
+    <p>
+      <b>*Bonne base REACT et Express</b><br>
+      Création des bases d’un réseau social d’entreprise (clone reddit) avec REACT et Express.
+    </p>
+    <p>
+      <b>*Projet domotique et écologique avec apprentissage de la programmation GPIO</b><br>
+      Dans l’idée d’une domotique sûre et abordable, orientée vers l’économie d’énergie et le renouvelable.
+    </p>
+    <p>
+      <b>*Projet web de CV online et interactif</b><br>
+      Mise en place d’un serveur LAMP et d’une page Web avec un CV interactif, login et base de données.
+    </p>
+  </footer>
+
+  <script src="./ressources/index.js"></script>
+
+</body>
+</html>
