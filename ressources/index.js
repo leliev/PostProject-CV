@@ -1,3 +1,4 @@
+//Color theme control
 function setTheme(theme) {
   return document.documentElement.className = theme;
 }
@@ -31,7 +32,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// Stat bars creation
+// Stat bars creation(html fragment might be faster)
 function createStats(title, array) {
   var temp = document.createElement('div');
   var name = document.createElement('h2');
@@ -55,7 +56,7 @@ function createStats(title, array) {
   }
   document.getElementById('stats-container').appendChild(temp);
 }; 
-
+//Savoir-faire stats (name:value)
 const sfaire = {
   'HTML/CSS': 'half',
   'JavaScript': 'half',
@@ -64,12 +65,12 @@ const sfaire = {
   'MongoDB': 'half',
   'NODE.JS': 'half'
 };
-
+//Language stats
 const lang = {
   'Anglais': 'full',
   'Japonais': 'half'
 };
-
+//Savoir-être stats
 const sEtre = {
   "Travail d'équipe": 'full',
   'Autonomie': 'full',

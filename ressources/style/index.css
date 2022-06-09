@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 :root,
 :root.light {
   --bg-color: #fff;
@@ -12,16 +13,13 @@
   --text-color: #45ADFE;
 }
 
-header {
-  position: relative;
-}
-
 body {
   max-width: 1280px;
   min-width: 600px;
   width: 95%;
   margin: auto;
 }
+
 h1, h2 {
   text-align: center;
   margin: 0;
@@ -55,15 +53,9 @@ body {
   color: var(--text-color);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1em;
-}
-
-article {
-  position: relative;
-  flex: auto;
+.center-element {
+  width: 90%;
+  margin: auto;
 }
 
 .entreprise {
@@ -77,17 +69,14 @@ article {
 
 .slides {
   display: none;
-  position: relative;
-  /*min-height: 500px;*/
 }
 
 .slides p, .slides ul{
   margin-left: 10%;
-  margin-right: 10%;
 }
 
-#formation p, #formation ul{
-  margin-left: 25%;
+#formation .center-element{
+  width: 75%;
 }
 
 /* Next & previous buttons */
@@ -112,7 +101,7 @@ article {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a text-color to the background color with a little bit see-through */
 .prev:hover, .next:hover {
   color: var(--bg-color);
   background-color: var(--text-color);
@@ -164,28 +153,23 @@ article {
   display: none;
 }
 
-/* Fading animation */
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
-}
-
 #stats-container {
   background-color: #2782c8;
   width: 85%;
   max-width: 1024px;
   margin: 0 auto 10px auto;
-  padding: 10px;
-  color: #fff;
+  padding: 0 10px 10px 10px;
+  color: var(--text-color);
 }
 
 #stats-container h2 {
   margin: 0 -10px 5px -10px;
-  background-color: #0d436d;
+  background-color: var(--bg-color);
 }
 
 #stats-container p {
   margin: 0;
+  color: #fff;
 }
 
 .stat-bar {
@@ -202,6 +186,7 @@ article {
   background-color: #0d436d;
 }
 
+/*Sliding animation*/
 .half { 
   width: 50%;
   animation: slideIn-half 1s ease-out;
@@ -220,6 +205,12 @@ article {
 .three-qurt {
   width: 75%;
   animation: slideIn 1s ease-out;
+}
+
+/* Fading animation */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
 }
 
 @keyframes fadeIn {
