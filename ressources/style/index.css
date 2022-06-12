@@ -31,13 +31,56 @@ main {
   margin-bottom: 1em;
 }
 
-footer {
-  padding: 1em;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(207, 101, 30);
+}
+
+nav ul {
+  display:flex;
+  justify-content: space-between;
+  padding-left: 0;
   border: 1px solid var(--text-color);
 }
 
-footer p {
-  margin-left: 10%;
+.nav-link {
+  color: var(--text-color);
+  text-align: center;
+  padding: 0.5em;
+  flex: 1;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #2782c8;
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: #2782c8;
+  color: #fff;
+}
+
+footer {
+  padding: 1em;
+  border: 1px solid var(--text-color);
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  margin-top: 1em;
+}
+
+.social .fab{
+  font-size: 1.5em;
 }
 
 li {
@@ -63,11 +106,16 @@ body {
   right: 10%;
 }
 
+/*Slides and sub-slides */
 .slides-container {
   position: relative;
 }
 
 .slides {
+  display: none;
+}
+
+.sub-slides {
   display: none;
 }
 
@@ -119,10 +167,11 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot.active, .dot:hover {
   background-color: #717171;
 }
 
+/*Theme button*/
 .theme-btn {
   width: 3em;
   height: 3em;
@@ -153,6 +202,7 @@ body {
   display: none;
 }
 
+/*Stats bar related rules*/
 #stats-container {
   background-color: #2782c8;
   width: 85%;
@@ -184,6 +234,16 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #0d436d;
+}
+
+.level {
+  margin: 0;
+  text-align: start;
+}
+
+.description {
+  margin: -10px 0 10px 0;
+  text-align: end;
 }
 
 /*Sliding animation*/

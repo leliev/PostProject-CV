@@ -21,6 +21,14 @@
     <button class="theme-btn dark" onclick="setTheme('dark')" title="thème sombre">
       <img src="./ressources/images/nature-icon-37198.png" alt="thème sombre">
     </button>
+    <nav>
+      <ul>
+        <li class="nav-link" onclick="currentSlide(1)">Présentation</li>
+        <li class="nav-link" onclick="currentSlide(2)">XP Professionnelle</li>
+        <li class="nav-link" onclick="currentSlide(3)">Formation</li>
+        <li class="nav-link" onclick="currentSlide(4)">Compétences</li>
+      </ul>
+    </nav>
   </header>
   
   <main>
@@ -31,7 +39,7 @@
         <h2>Présentation</h2>
         <hr>
         <div class="center-element">
-
+          <p></p>
         </div>
       </article>
 
@@ -135,25 +143,78 @@
   </main>
 
   <footer>
-    <hr>
-    <h2>Contact et autres</h2>
-    <hr>
-    <div class="center-element">
-      <p>
-        <b>*Bonne base REACT et Express</b><br>
-        Création des bases d’un réseau social d’entreprise (clone reddit) avec REACT et Express.
-      </p>
-      <p>
-        <b>*Projet domotique et écologique avec apprentissage de la programmation GPIO</b><br>
-        Dans l’idée d’une domotique sûre et abordable, orientée vers l’économie d’énergie et le renouvelable.
-      </p>
-      <p>
-        <b>*Projet web de CV online et interactif</b><br>
-        Mise en place d’un serveur LAMP et d’une page Web avec un CV interactif, login et base de données.
-      </p>
+    <div class="sub-slides fadeIn">
+      <hr>
+      <h2>Contact</h2>
+      <hr>
+      <div class="center-element contact">
+        <span><b>E-mail:</b> <a href="mailto:exemple@exemple.com">exemple@exemple.com</a></span>
+        <span><b>Tél:</b> 555-555-000</span>
+      </div>
+      <div class="social">
+        <a href="#!">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="sub-slides fadeIn">
+      <hr>
+      <h2>A propos de moi</h2>
+      <hr>
+      <div class="center-element">
+        <p>courte presentation de moi</p>
+      </div>
+    </div>
+
+    <div class="sub-slides fadeIn">
+      <hr>
+      <h2>Mes projets</h2>
+      <hr>
+      <div class="center-element">
+        <p>liste de mes projet ici</p>
+      </div>
+    </div>
+
+    <div class="sub-slides fadeIn">
+      <hr>
+      <h2>Légende</h2>
+      <hr>
+      <div id="legend" class="center-element">
+        <p class="level">Débutant</p>
+        <div class="stat-bar">
+          <div class="stat-value quarter"></div>
+        </div>
+        <p class="description">Connaît les bases</p>
+        <p class="level">Intermédiaire</p>
+        <div class="stat-bar">
+          <div class="stat-value half"></div>
+        </div>
+        <p class="description">Bonne bases et mise en pratique</p>
+        <p class="level">Avancé</p>
+        <div class="stat-bar">
+          <div class="stat-value three-qurt"></div>
+        </div>
+        <p class="description">Bonne connaissances théorique et pratique</p>
+        <p class="level">Maîtrise</p>
+        <div class="stat-bar">
+          <div class="stat-value full"></div>
+        </div>
+        <p class="description">Connaît sur le bout des doigts</p>
+      </div>
     </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/c489cd04d7.js" crossorigin="anonymous"></script>
   <script src="./ressources/index.js"></script>
 
 </body>
