@@ -32,6 +32,10 @@
   </header>
   
   <main>
+    <noscript style="text-align: center;">
+      <h2>Javascript est désactivé!</h2>
+      <p>Ce site utilise JavaScript pour afficher le contenu des articles.<br>Veuillez l'activer pour voir le site</p>
+    </noscript>
     <div class="slides-container">
       <!--Presentation article slide-->
       <article class="slides fadeIn">
@@ -39,7 +43,14 @@
         <h2>Présentation</h2>
         <hr>
         <div class="center-element">
-          <p></p>
+          <h3>Bienvenu sur mon premier projet de CV version Web</h3>
+          <p class="textblock">
+            Ce site représente un simple exercice et d'autres projets plus complexes sont à venir.<br>
+            Cette version utilise du HTML 5, CSS 3 et un peu de javaScript pour la gestion des slides/articles et celle du thème de couleur.<br>
+            L'idée de ce site est de ressembler le plus possible à un CV conventionnel et correspond mieux à un format A4 (avec une approche "mobile first") mais sa simplicité le rend relativement bien responsive.<br> 
+            Vous trouverez mes info personnelles sur la version pdf de mon CV (cette version étant publique).
+
+          </p>
         </div>
       </article>
 
@@ -91,11 +102,11 @@
       </article>
 
       <!--Formation article slide-->
-      <article id="formation" class="slides fadeIn">
+      <article class="slides fadeIn">
         <hr>
         <h2>Formation</h2>
         <hr>
-        <div class="center-element">
+        <div class="center-element formation">
           <p>
             <b>07/2021-03/2022 Formation développeur Web FullStack</b><br>
             <ul>
@@ -143,6 +154,7 @@
   </main>
 
   <footer>
+    <!-- Contacts sub-slide -->
     <div class="sub-slides fadeIn">
       <hr>
       <h2>Contact</h2>
@@ -161,30 +173,40 @@
         <a href="#!">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="#!">
+        <a href="https://github.com/leliev" target="_blank">
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
     </div>
-
+    <!-- About me sub-slide -->
     <div class="sub-slides fadeIn">
       <hr>
       <h2>A propos de moi</h2>
       <hr>
       <div class="center-element">
-        <p>courte presentation de moi</p>
+        <p class="textblock">
+          Je suis quelqu'un de curieux, franc et plutôt jovial, pour faire court.<br>
+          En tant qu'employé, je suis organisé et assez exigent sur la qualité de mon travail, j'ai une bonne expérience des relations client aussi bien en commerce qu'en service.<br>
+          La diversité des mes pécédents emplois m'a permis de me forger de bonnes capacitées d'apprentissage et d'adaptation.
+          J'apprécie le travail d'équipe, mais je suis autonome et n'hésite pas à prendre des initiatives quand le travail doit être fait!
+        </p>
       </div>
     </div>
-
+    <!-- Projects sub-slides -->
     <div class="sub-slides fadeIn">
       <hr>
       <h2>Mes projets</h2>
       <hr>
-      <div class="center-element">
-        <p>liste de mes projet ici</p>
+      <div class="center-element formation">
+        <h3>Là, tout de suite</h3>
+        <p>Produire et apprendre: Sass, REACT, perfectionner HTML/CSS, produire des front propres sans perdre de temps sur des choses simples.</p>
+        <h3>Et après...</h3>
+        <p>On recommence avec le back-end et réaliser un Web Game</p>
+        <h3>Projet domotique</h3>
+        <p>Apprendre la programmation GPIO afin de concevoir un système d'optimisation d'énergie</p>
       </div>
     </div>
-
+    <!-- Stat legend sub-slides -->
     <div class="sub-slides fadeIn">
       <hr>
       <h2>Légende</h2>

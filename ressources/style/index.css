@@ -20,7 +20,7 @@ body {
   margin: auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   margin: 0;
 }
@@ -37,6 +37,10 @@ a {
 
 a:hover {
   color: rgb(207, 101, 30);
+}
+
+p {
+  font-size: 18px;
 }
 
 nav ul {
@@ -67,7 +71,6 @@ nav ul {
 footer {
   padding: 1em;
   border: 1px solid var(--text-color);
-  text-align: center;
 }
 
 .contact {
@@ -77,6 +80,7 @@ footer {
 
 .social {
   margin-top: 1em;
+  text-align: center;
 }
 
 .social .fab{
@@ -123,7 +127,7 @@ body {
   margin-left: 10%;
 }
 
-#formation .center-element{
+.center-element.formation {
   width: 75%;
 }
 
